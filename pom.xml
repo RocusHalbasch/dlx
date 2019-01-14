@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.halbasch</groupId>
+	<artifactId>dlx</artifactId>
+	<version>1.0.0</version>
+
+	<name>Dancing Links</name>
+	<description>An iterative implementation of Donald Knuth's Dancing Links</description>
+	<url>https://github.com/RocusHalbasch/dlx</url>
+
+	<licenses>
+		<license>
+			<name>Unlicense</name>
+			<url>http://unlicense.org/</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Rocus Halbasch</name>
+			<email>rocus.halbasch@gmail.com</email>
+			<organization>Elusive</organization>
+			<organizationUrl>https://github.com/RocusHalbasch</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/RocusHalbasch/dlx.git</connection>
+		<developerConnection>scm:git:ssh://github.com:RocusHalbasch/dlx.git</developerConnection>
+		<url>https://github.com/RocusHalbasch/dlx</url>
+	</scm>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.1.1</version>
+				<configuration>
+					<excludes>
+						<exclude>**/halbasch/*</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
